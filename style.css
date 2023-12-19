@@ -1,0 +1,189 @@
+a{
+    font-size: 11px;
+    text-align: center;
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+.attribution a{color: hsl(228, 45%, 44%);text-decoration: underline;}
+.attribution{font-size: 11px; text-align: center;}
+
+body{
+    background-image: url(images/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'poppins';
+}
+#wrapper{
+    margin: 5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+#card{
+    background-color: white;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 8px hsla(32, 41%, 47%, 0.3)
+}
+#claim{
+    margin-bottom: 3rem;
+}
+#claim h1{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#claim p{
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    text-align: center;
+}
+#trial-info{
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 1rem;
+    background-color: hsl(248, 32%, 49%);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    font-weight: 400;
+    box-shadow: 0 8px hsla(248, 32%, 49%, 0.3);
+}
+#trial-info span{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+form{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.box{
+    border: 0.5px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box; /* So padding and border are perceived as width */
+    padding: 1rem;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+.box::placeholder{
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.error-msg{
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 0.2rem;
+    text-align: right;
+    display: none;
+}
+
+#claim-btn{
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px hsl(154, 57%, 39%);
+}
+#claim-btn:hover{
+    background-color: hsl(154, 43%, 63%);
+    box-shadow: 0 4px hsl(155, 26%, 45%);
+    cursor: pointer;
+}
+#note{
+    color: hsl(246, 25%, 77%);
+    font-size: 12px;
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* index2 specific styling */
+#wrapper-2{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#thanks-text{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0 8px hsla(248, 32%, 49%, 0.3);
+    border-radius: 1rem;
+}
+#thanks-text span{
+    color: hsl(154, 59%, 51%);
+    font-weight: 500;
+}
+#thanks-text p{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* terms and services specific styling */
+#wrapper-3{
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins';
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    
+}
+#wrapper-3 h1{
+    max-width: 50rem;
+    background-color: hsl(249, 10%, 26%) ;
+    color: white;
+    font-weight: 500;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+@media only screen and (width >= 1245px){
+    #wrapper{
+        flex-direction: row;
+        align-items: center;
+        height: 100vh;
+        margin: 0rem 10rem;
+    }
+    #claim{
+        margin-bottom: 0;
+        margin-right: 5rem;
+        max-width: 500px;
+    }
+    #claim h1{
+        text-align: left;
+        font-size: 50px;
+    }
+    #claim p{
+        text-align: left;
+        font-size: 20px;
+    }
+    main{
+        width: 100%;
+    }
+    #card{
+        width: 100%;
+    }
+}
